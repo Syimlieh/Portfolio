@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+header {
+	min-height: 80vh;
+	padding: 15px 0 15px 5%;
+	background-color: #e1e2e3;
+	position: relative; 
+	width: 100%;
+}
+/*for user input to fit in properly in small screen*/
+#contactheader {
+	height: 35em;
+}
+.navdiv {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 10%;
+}
+.logo {
+	height:auto;
+	width: 60px;
+	cursor: pointer;
+	margin-left: 2em;
+}
+#navmenu {
+	display: none;
+}
+header .logo {
+	margin-right: auto;
+}
+a, li, button {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	text-decoration: none;
+}
+#toggle {
+	display: none;
+}
+.navLink {
+	list-style: none;
+}
+.navLink li {
+	display: inline-block;
+	padding: 0 30px;
+}
+.navLink li a {
+	transition: all 0.3 ease 0s;
+	color: #005fed;
+	width: 100%;
+	display: block;
+}
+.navlink li a:hover {
+	color: #008899;
+}
+button {
+	padding: 9px 25px;
+	font-weight: bold;
+	outline: none;
+	/*margin-left: 2vw;*/
+	margin-left: 1.4em;
+	background-color: rgb(81, 143, 237);
+	cursor: pointer;
+	border: none;
+	color: #fff;
+	border-radius: 50px;
+	transition: all 0.3 ease 0s;
+}
+.navLink li button a {
+	color: #fff;
+}
+
+button:hover {
+	background-color: rgba(0, 136, 169, 0.8);
+}
+/*contIllus*/
+.contIlus {
+	height: 93.7%;
+	display: flex;
+}
+/*contentHead*/
+.contentHead {
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	z-index: 2;
+	flex: 1;
+	font-family:  "Montserrat", sans-serif;
+}
+.contentHead h1, h3 p {
+	margin: 0 0 .5em 1em;
+}
+.contentHead h1 {
+	font-size: 2.5vw;
+}
+.contentHead h3 {
+	text-align: justify;
+	line-height: 40px;
+	font-size: 1.3vw;
+}
+.contIlus .illus {
+	flex:1;
+}
+.illusAbout {
+	overflow: hidden;
+}
+.illusAbout img {
+	height: 100%;
+}
+.contIlus .illus  img {
+	width: 100%;
+	margin-top: 4em;
+}
+.shape {
+	height: 30vw;
+	width: 35vw;
+	background-color: rgba(0, 136, 169, 0.2);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-radius: 0% 100% 0% 0% / 51% 100% 10% 0%;
+	z-index: 1;
+}
+.shape2 {
+	height: 3em;
+	width: 5em;
+	background-color: rgba(0, 136, 169, 0.6);
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	border-radius: 75% 98% 100% 78% / 100% 100% 66% 76%;
+	z-index: 1;
+}
+/*section*/
+/*lightbox styling*/
+
+
+
+
+.benefitsec {
+	display: flex;
+	width: 100%;
+}
+.imgbox {
+	width: 50%;
+	height: auto;
+}
+.imgbox img {
+	width: 100%;
+}
+.benefitList {
+	width: 50%;
+	height: auto;
+	font-family: "Montserrat", sans-serif;
+	margin-left: 5em;
+}
+.benefitList h2 {
+	margin: 1.5em auto 1em 2em;
+	text-align: center;
+	position: relative;
+}
+.benefitList h3 {
+	margin: .6em auto auto 3em;
+	text-align: center;
+}
+.benefitList span {
+	color: #005fed;;
+}
+.benefitList p {
+	letter-spacing: 1px;
+	margin: .6em auto auto 3em;
+	line-height: 25px;
+	text-align: justify;
+}
+.percent {
+	width: 50%;	
+}
+.percent img {
+	width: 100%;
+}
+.mainbox {
+	display: flex;
+	flex-wrap: wrap;
+	width: 65%;
+	margin: auto;
+}
+.awardDiv {
+	text-align: center;
+	margin: 3em;
+	font-family: 'Fira Sans', sans-serif;
+}
+.box {
+	box-shadow: 5px 10px 18px 10px #888;
+}
+.box .Imgbox img {
+	width: 100%;
+}
+.box1 {
+	flex: 1;
+	margin-right: 1em;
+	-ms-transform: rotate(7deg); /* IE 9 */
+	-webkit-transform: rotate(7deg); /* Safari */
+	transform: rotate(6deg);
+}
+.box3 {
+	flex: 1;
+	-ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Safari */
+    transform: rotate(-5deg);
+}
+.sometxt {
+	margin: .5em auto;
+}
+.sometxt p {
+	font-size: 16px;
+	text-align: center;
+}
+/*service section*/
+.servicesection, #Contact_section {
+	display: flex;
+	width: 80%;
+	margin: auto;
+}
+.servicebox, .calling , .email{ 
+	font-family: "Montserrat", sans-serif;
+	margin: 2em;
+	text-align: center;
+}
+.servicebox h2, p {
+	margin: 1em auto;
+	line-height: 30px;
+}
+/*Contact Page*/
+#formHead {
+	position: absolute;
+	left: 24%;
+	top: 3.7em;
+	z-index: 200;
+}
+.verymaindiv {
+	background-color: #E2E3E4;
+	width: 50%;
+	margin-left: 1em;
+	border-radius: 10px;
+	height: 60vh;
+	margin-top: 2em;
+	/*box-shadow: 40px 30px 50px 0px #fef;*/
+}
+.carmilleage input, textarea {
+	padding: 0.7em;
+	display: block;
+	border-radius: 20px;
+	border: none;
+	width: 96%;
+	margin-left: .5em;
+	margin-bottom: 1em;
+	margin-top: 3em;
+	z-index: 10;
+	position: relative;
+	outline: none;
+}
+#Contact_section {
+	justify-content: space-around;
+}
+.contact , .emaildiv{
+	width: 8em;
+	height: auto;
+	margin: auto;
+}
+.contact img, .emaildiv img {
+	width: 100%;
+	margin-bottom: 1em;
+}
+.imagegallheading {
+	margin-top: 6em;
+	text-align: center;
+	font-family: 'Fira Sans', sans-serif;
+}
+.photoGallery {
+	width: 100%;
+	display: grid;
+	margin-top: 3em;
+	grid-template-columns: repeat(100, 15px);
+	grid-template-rows: repeat(42, 20px);
+	justify-content: center;
+}
+.gallery {
+	width: 70%; 
+	height: auto;
+	margin: auto;
+}
+.galldiv img {
+	width: 100%;
+}
+.gallery1 {
+	grid-column: 20/45;
+	grid-row: 1/auto;
+}
+.gallery2 {
+	grid-column: 34/66;
+	grid-row: 3/auto;
+	
+}
+.gallery3 {
+	grid-column: 55/82;
+	grid-row: 1/auto;
+}
+.gallery4 {
+	grid-column: 31/69;
+	grid-row: 16/auto;
+	z-index: 100;
+}
+.gallery5 {
+	grid-column: 55/82;
+	grid-row: 11/auto;
+}
+.gallery6 {
+	grid-column: 20/46;
+	grid-row: 25/auto;
+}
+.gallery7 {
+	grid-column: 39/62;
+	grid-row: 30/auto;
+}
+.gallery8 {
+	display: none;
+}
+
+/*footer*/
+footer {
+	font-family: "Montserrat", sans-serif;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin: auto;
+	background-color: #343a40;
+}
+footer div {
+	width: 30%;
+	margin: 0 3em;
+	padding-left: 3em;
+}
+.footerclass h2 {
+	margin-top: 1em;
+	color: #b4b4b4;
+	font-family: 'Fira Sans', sans-serif;
+}
+.footerclass a {
+	line-height: 25px;
+	color: #b4b4b4;
+}
+
+/*media queries*/
+@media (max-width: 930px){
+	.navdiv {
+		margin-right: 2%;
+	}
+	.maincarsolution {
+		margin-right: 2em;
+	}
+	.illus {
+		display: none;
+	}
+	.benefitsec {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.benefitsec div {
+		width: 80%;
+		margin: 0;
+	}
+	.contIlus .contentHead  {
+        width: 100%;
+        position: absolute;
+        left: 1em;
+        top: 34%;
+        display: block;
+        align-self: center;
+	}
+	/*contact page*/
+	#formHead {
+		left: 35vw;
+	}
+	.carmilleage input, textarea {
+		width: 100%;
+	}
+	 .contIlus .verymaindiv {
+	 	width: 85%;
+        position: absolute;
+        left: 1em;
+        top: 14%;
+        display: block;
+        margin-right: 1em;
+	 }
+	.contentHead h1 {
+		font-size: 3.9vw;
+	}
+	.contentHead h3 {
+		font-size: 2vw;
+	}
+	.contentHead p {
+		 font-size: 2vw;
+	}
+	.emailId p {
+		margin-left: -5vw;
+	}
+
+	/*gallery*/
+	.photoGallery {
+		grid-template-columns: repeat(100, 15px);
+		grid-template-rows: repeat(52, 20px);
+	}
+	.gallery1 {
+		grid-column: 26/54;
+		grid-row: 1/auto;
+	}
+	.gallery2 {
+		grid-column: 41/81;
+		grid-row: 3/auto;
+		margin-top: 10px;
+	}
+	.gallery3 {
+		grid-column: 46/76;
+		grid-row: 22/auto;
+		margin-top: 10px;
+		margin-left: 4.3em;
+	}
+	.gallery4 {
+		grid-column: 26/54;
+		grid-row: 28/auto;
+		z-index: 100;
+	}
+    .gallery7 {
+		grid-column: 26/54;
+		grid-row: 39/50;
+	}
+	.gallery5 {
+		grid-column: 53/80;
+		grid-row: 11/auto;
+		display: none;
+	}
+	.gallery6 {
+		grid-column: 46/76;
+		grid-row: 34/auto;
+		margin-top: -4.5px;
+	}
+	footer {
+		flex-wrap: wrap;
+	}
+	.footerclass3 {
+		margin: 1px auto;
+	}	
+}
+@media (max-width: 710px) {
+	header {
+		padding: 0;
+	}
+	button {
+		margin-left: 10vw;
+	}
+	.contentHead p {
+		 font-size: 3vw;
+	}
+	.navdiv {
+		display: block;
+		box-sizing: border-box;
+	}
+	.navdiv .logo {
+		margin-left: 44vw;
+	}
+	.navdiv nav {
+		text-align: center;
+		height: 9.2em;
+		width: 102%;
+		background: lightblue;
+		position: relative;
+		display: none;
+		z-index: 1000;
+	}
+	.navdiv nav ul li{
+		display: block;
+		height: 2.3em;
+		line-height: 2.4em;
+		padding: 0;
+	}
+	.navdiv nav li button a {
+		color: #fff;
+	}
+	.navdiv nav ul li:hover  {
+		background-color: rgba(81, 143, 237 , 0.6);
+		color: #fff;
+	}
+	.navdiv nav ul li:hover a{
+		color: #fff;
+	}
+	button {
+		margin-left: 1.4em;
+	}
+	.navdiv nav ul li button {
+		margin-bottom: -5em;
+		margin-left: 0;
+		width: 100%;
+		border-radius: 0;
+		display: block;
+		color: #fff;
+	}
+	.navdiv img {
+		margin: auto;
+	}
+	
+	#toggle:checked ~ nav {
+		display: block;
+	}
+	#navmenu {
+		display: inline-block;
+		font-size: 1.4em;
+		color: #005fed;
+		float: right;
+		margin-right: 5vw;
+		margin-top: 10px;
+	}
+	.contentHead h1 {
+		font-size: 4.5vw;
+	}
+	.contentHead h3 {
+		font-size: 2.4vw;
+	}
+	.mainbox {
+		flex-direction: column;
+	} 
+	.box {
+		transform: rotate(4deg);
+	}
+	.box3 {
+		transform: rotate(-3deg);
+	}
+	/*contact page*/
+	#Contact_section, .servicesection {
+		flex-direction: column;
+	}
+	.emailId p {
+		font-size: 3vw;
+	}
+	#formHead {
+		margin-left: -3vw;
+	}
+	.photoGallery {
+		display: block;
+	}
+	.photoGallery div {
+		margin: 1em auto;
+	}
+	.gallery2 {
+		display: none;
+	}
+	.gallery3 {
+		margin: auto;
+	}
+	.gallery8 {
+		display: block;
+	}
+	footer div {
+		width: 100%;
+		text-align: center;
+	}
+	.footerclass {
+		margin-left: 0;
+
+	}
+}
